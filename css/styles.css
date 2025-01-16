@@ -5,7 +5,7 @@ body {
 }
 
 /* Контейнер хедера */
-.header-container {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,8 +100,8 @@ body {
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
-  line-height: 60px; /* 107.143% */
-  letter-spacing: 1.12px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
 }
 
 .hero-button {
@@ -114,7 +114,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.04em;
 }
 
 .hero-button :hover {
@@ -140,7 +140,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em;
 }
 
 /* Текст описания */
@@ -151,7 +151,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
 }
 
 .team-title {
@@ -160,7 +160,8 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: 0.72px;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .team-list {
@@ -178,7 +179,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em;
 }
 
 .team-role {
@@ -187,7 +188,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
 }
 
 .project-card {
@@ -196,7 +197,8 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: 0.72px;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .card-list {
@@ -219,7 +221,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em;
 }
 
 .card-product {
@@ -228,7 +230,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
 }
 
 .site-footer {
@@ -236,35 +238,27 @@ body {
 }
 
 .footer-description {
-  color: var(--CLOUD, #f4f4fd);
+  color: #f4f4fd;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
   width: 100%;
 }
 
 .footer-logo {
-  font-family: Raleway, sans-serif;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 1.16em;
-  line-height: 1.17;
-  display: inline-block;
-  font-style: normal;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-  height: 21px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700; /* Жирное начертание */
+  font-size: 24px; /* Размер шрифта */
+  line-height: 1.17; /* Межстрочное расстояние */
+  letter-spacing: 0.03em; /* Отступы между буквами */
+  text-transform: uppercase; /* Преобразование в верхний регистр */
+  text-decoration: none; /* Убираем подчеркивание */
+  color: #4d5ae5; /* Цвет первой части логотипа */
 }
 
-.footer-web {
-  color: #4d5ae5;
-  width: 44px;
-}
-
-.footer-studio {
-  color: #f4f4fd;
-  width: 71px;
+/* Вторая часть логотипа */
+.footer-secondary {
+  color: #f4f4fd; /* Цвет второй части логотипа */
 }
