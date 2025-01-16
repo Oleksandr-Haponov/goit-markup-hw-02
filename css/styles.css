@@ -164,13 +164,8 @@ body {
   background-color: #fff;
   padding: 20px;
   text-align: left; /* Текст по левому краю */
-  transition: all 0.3s ease;
-  flex-basis: ((100% - 72px) / 4);
-}
+  flex-basis: ((100% - 384px) / 4);
 
-.advantages-item:hover {
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
 }
 
 .advantage-title {
