@@ -1,0 +1,254 @@
+body {
+  font-family: "Roboto", sans-serif; /* Общий шрифт */
+  background-color: #ffffff; /* Цвет фона */
+}
+
+.header-container {
+  background: var(--WHITE, #fff);
+  width: 1440px;
+  height: 72px;
+  list-style: none; /* Убираем маркеры списка */
+}
+
+/* Общие стили логотипа */
+.logo {
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 3%;
+  line-height: 21px; /* 116.667% */
+  display: inline-block;
+  font-style: normal;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+/* Стили первого слова логотипа */
+.logo-primary {
+  color: var(--IRIS, #4d5ae5);
+}
+
+/* Стили второго слова логотипа */
+.logo-secondary {
+  color: var(--NAVY-BLUE, #2e2f42);
+}
+.menu-item {
+  list-style: none; /* Убираем маркеры списка */
+}
+/* Стили для ссылок */
+.menu-link {
+  color: var(--NAVY-BLUE, #2e2f42);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+  text-decoration: none;
+}
+
+/* Стили при наведении */
+.menu-link:hover {
+  color: #404bbf; /* Цвет текста при наведении */
+  text-decoration: underline; /* Добавляем подчеркивание */
+}
+/* Стили для списка контактов */
+.contact-list {
+  color: var(--SLATE, #434455);
+}
+
+/* Стили для элемента списка */
+.contact-item {
+  list-style: none;
+}
+
+/* Стили для ссылок */
+.contact-link {
+  color: var(--SLATE, #434455);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+  text-decoration: none;
+}
+
+/* Стили при наведении на ссылку */
+.contact-link:hover {
+  color: #404bbf; /* Изменение цвета при наведении */
+}
+
+.hero-title {
+  background: var(--NAVY-BLUE, #2e2f42);
+  color: var(--WHITE, #fff);
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 107.143% */
+  letter-spacing: 1.12px;
+}
+
+.hero-button {
+  background: var(--IRIS, #4d5ae5);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--WHITE, #fff);
+  /* Button Text */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+.hero-button :hover {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+
+/* Секция с преимуществами */
+.advantages-section {
+  background-color: #ffffff; /* Светлый фон */
+}
+
+/* Элементы списка */
+.advantages-item {
+  background-color: #ffffff;
+  list-style: none; /* Убираем маркеры списка */ /* Белый фон элемента */
+}
+
+/* Заголовки преимуществ */
+.advantage-title {
+  color: var(--NAVY-BLUE, #2e2f42);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.4px;
+}
+
+/* Текст описания */
+.advantage-text {
+  color: var(--SLATE, #434455);
+  /* Body */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.team-title {
+  color: var(--NAVY-BLUE, #2e2f42);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: 0.72px;
+}
+
+.team-list {
+  list-style: none; /* Убираем маркеры списка */
+}
+
+.team-foto {
+  width: 264px;
+  height: 260px;
+}
+
+.time-name {
+  color: var(--NAVY-BLUE, #2e2f42);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.4px;
+}
+
+.team-role {
+  color: var(--SLATE, #434455);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.project-card {
+  color: var(--NAVY-BLUE, #2e2f42);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: 0.72px;
+}
+
+.card-list {
+  list-style: none;
+}
+
+.card-content {
+  width: 360px;
+  height: 420px;
+}
+
+.card-photo {
+  width: 360px;
+  height: 300px;
+}
+
+.card-name {
+  color: var(--NAVY-BLUE, #2e2f42);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.4px;
+}
+
+.card-product {
+  color: var(--SLATE, #434455);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.site-footer {
+  background: var(--NAVY-BLUE, #2e2f42);
+}
+
+.footer-description {
+  color: var(--CLOUD, #f4f4fd);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+  width: 264px;
+}
+
+.footer-logo {
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 3%;
+  line-height: 21px; /* 116.667% */
+  display: inline-block;
+  font-style: normal;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  height: 21px;
+}
+
+.footer-web {
+  color: var(--IRIS, #4d5ae5);
+  width: 44px;
+}
+
+.footer-studio {
+  color: var(--CLOUD, #f4f4fd);
+  width: 71px;
+}
