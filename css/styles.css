@@ -133,33 +133,51 @@ body {
 
 /* Секция с преимуществами */
 .advantages-section {
-  background-color: #ffffff; /* Светлый фон */
+  padding: 40px 20px;
+  background-color: #ffffff; /* Фон секции */
+  text-align: center; /* Центрирование содержимого */
+}
+
+/* Список преимуществ */
+.advantages-list {
+  list-style: none; /* Убираем маркеры списка */
+  margin: 0; /* Убираем внешние отступы */
+  padding: 0; /* Убираем внутренние отступы */
+  display: grid; /* Используем грид для размещения */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Адаптивная сетка */
+  gap: 20px; /* Расстояние между элементами */
 }
 
 /* Элементы списка */
 .advantages-item {
-  background-color: #ffffff;
-  list-style: none; /* Убираем маркеры списка */ /* Белый фон элемента */
+  background-color: #f9f9f9; /* Лёгкий фон для элементов */
+  padding: 20px; /* Внутренние отступы */
+  border-radius: 8px; /* Скругление углов */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+  text-align: left; /* Выравнивание текста */
 }
 
 /* Заголовки преимуществ */
 .advantage-title {
-  color: #2e2f42;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  color: #2e2f42; /* Цвет текста */
+  font-size: 20px; /* Размер шрифта */
+  font-weight: 500; /* Полужирное начертание */
+  line-height: 1.2; /* Межстрочное расстояние */
+  letter-spacing: 0.02em; /* Межбуквенное расстояние */
+  margin-bottom: 12px; /* Отступ снизу */
 }
 
 /* Текст описания */
 .advantage-text {
-  color: #434455;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  color: #434455; /* Цвет текста */
+  font-size: 16px; /* Размер текста */
+  font-weight: 400; /* Обычное начертание */
+  line-height: 1.5; /* Межстрочное расстояние */
+  letter-spacing: 0.02em; /* Межбуквенное расстояние */
+  margin: 0; /* Убираем внешние отступы */
 }
 
 /* Секция "Наша команда" */
