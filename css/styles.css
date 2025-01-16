@@ -1,86 +1,104 @@
+/* Общие стили */
 body {
-  font-family: "Roboto", sans-serif; /* Общий шрифт */
-  background-color: #ffffff; /* Цвет фона */
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
 }
 
+/* Контейнер хедера */
 .header-container {
-  background: var(--WHITE, #fff);
-  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  width: 100%;
   height: 72px;
-  list-style: none; /* Убираем маркеры списка */
+  padding: 0 20px;
 }
 
-/* Общие стили логотипа */
+/* Логотип */
 .logo {
-  font-family: Raleway, sans-serif;
-  text-decoration: none;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  letter-spacing: 3%;
-  line-height: 21px; /* 116.667% */
-  display: inline-block;
-  font-style: normal;
-  letter-spacing: 0.54px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
+  display: inline-block;
 }
 
-/* Стили первого слова логотипа */
-.logo-primary {
-  color: var(--IRIS, #4d5ae5);
-}
-
-/* Стили второго слова логотипа */
+/* Второе слово логотипа */
 .logo-secondary {
-  color: var(--NAVY-BLUE, #2e2f42);
+  color: #2e2f42;
 }
+
+/* Список меню */
+.menu-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+/* Пункты меню */
 .menu-item {
-  list-style: none; /* Убираем маркеры списка */
+  list-style: none;
 }
-/* Стили для ссылок */
+
+/* Ссылки в меню */
 .menu-link {
-  color: var(--NAVY-BLUE, #2e2f42);
-  font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
   text-decoration: none;
 }
 
-/* Стили при наведении */
-.menu-link:hover {
-  color: #404bbf; /* Цвет текста при наведении */
-  text-decoration: underline; /* Добавляем подчеркивание */
-}
-/* Стили для списка контактов */
-.contact-list {
-  color: var(--SLATE, #434455);
+.menu-link:hover,
+.menu-link:focus {
+  color: #404bbf;
+  text-decoration: underline;
 }
 
-/* Стили для элемента списка */
+/* Контейнер контактов */
+.contact-info {
+  font-style: normal; /* Убираем курсив */
+}
+
+/* Список контактов */
+.contact-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Элементы списка контактов */
 .contact-item {
   list-style: none;
 }
 
-/* Стили для ссылок */
+/* Ссылки контактов */
 .contact-link {
-  color: var(--SLATE, #434455);
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
   text-decoration: none;
 }
 
-/* Стили при наведении на ссылку */
-.contact-link:hover {
-  color: #404bbf; /* Изменение цвета при наведении */
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
 }
 
 .hero-title {
-  background: var(--NAVY-BLUE, #2e2f42);
-  color: var(--WHITE, #fff);
+  background: #2e2f42;
+  color: #fff;
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
@@ -89,10 +107,10 @@ body {
 }
 
 .hero-button {
-  background: var(--IRIS, #4d5ae5);
+  background: #4d5ae5;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: var(--WHITE, #fff);
+  color: #fff;
   /* Button Text */
   font-size: 16px;
   font-style: normal;
@@ -119,7 +137,7 @@ body {
 
 /* Заголовки преимуществ */
 .advantage-title {
-  color: var(--NAVY-BLUE, #2e2f42);
+  color: #2e2f42;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -129,7 +147,7 @@ body {
 
 /* Текст описания */
 .advantage-text {
-  color: var(--SLATE, #434455);
+  color: #434455;
   /* Body */
   font-size: 16px;
   font-style: normal;
@@ -139,7 +157,7 @@ body {
 }
 
 .team-title {
-  color: var(--NAVY-BLUE, #2e2f42);
+  color: #2e2f42;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -157,7 +175,7 @@ body {
 }
 
 .time-name {
-  color: var(--NAVY-BLUE, #2e2f42);
+  color: #2e2f42;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -166,7 +184,7 @@ body {
 }
 
 .team-role {
-  color: var(--SLATE, #434455);
+  color: #434455;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -175,7 +193,7 @@ body {
 }
 
 .project-card {
-  color: var(--NAVY-BLUE, #2e2f42);
+  color: #2e2f42;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -198,7 +216,7 @@ body {
 }
 
 .card-name {
-  color: var(--NAVY-BLUE, #2e2f42);
+  color: #2e2f42;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -207,7 +225,7 @@ body {
 }
 
 .card-product {
-  color: var(--SLATE, #434455);
+  color: #434455;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -216,7 +234,7 @@ body {
 }
 
 .site-footer {
-  background: var(--NAVY-BLUE, #2e2f42);
+  background: #2e2f42;
 }
 
 .footer-description {
@@ -244,11 +262,11 @@ body {
 }
 
 .footer-web {
-  color: var(--IRIS, #4d5ae5);
+  color: #4d5ae5;
   width: 44px;
 }
 
 .footer-studio {
-  color: var(--CLOUD, #f4f4fd);
+  color: #f4f4fd;
   width: 71px;
 }
