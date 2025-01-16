@@ -14,23 +14,21 @@ body {
   height: 72px;
   padding: 0 20px;
 }
-
-/* Логотип */
+/* Общие стили для логотипа */
 .logo {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-  text-decoration: none;
-  display: inline-block;
+  font-weight: 700; /* Жирное начертание */
+  font-size: 24px; /* Размер шрифта */
+  line-height: 1.17; /* Межстрочное расстояние */
+  letter-spacing: 0.03em; /* Отступы между буквами */
+  text-transform: uppercase; /* Преобразование в верхний регистр */
+  text-decoration: none; /* Убираем подчеркивание */
+  color: #4d5ae5; /* Цвет первой части логотипа */
 }
 
-/* Второе слово логотипа */
+/* Вторая часть логотипа */
 .logo-secondary {
-  color: #2e2f42;
+  color: #2e2f42; /* Цвет второй части логотипа */
 }
 
 /* Список меню */
@@ -115,7 +113,7 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.64px;
 }
 
@@ -141,7 +139,7 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 120% */
+  line-height: 1.2;
   letter-spacing: 0.4px;
 }
 
@@ -152,7 +150,7 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.32px;
 }
 
@@ -161,7 +159,7 @@ body {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 111.111% */
+  line-height: 1.11;
   letter-spacing: 0.72px;
 }
 
@@ -179,7 +177,7 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 120% */
+  line-height: 1.2;
   letter-spacing: 0.4px;
 }
 
@@ -188,7 +186,7 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.32px;
 }
 
@@ -197,7 +195,7 @@ body {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 111.111% */
+  line-height: 1.11;
   letter-spacing: 0.72px;
 }
 
@@ -220,7 +218,7 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 120% */
+  line-height: 1.2;
   letter-spacing: 0.4px;
 }
 
@@ -229,7 +227,7 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.32px;
 }
 
@@ -242,9 +240,9 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.32px;
-  width: 264px;
+  width: 100%;
 }
 
 .footer-logo {
@@ -252,8 +250,8 @@ body {
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
-  letter-spacing: 3%;
-  line-height: 21px; /* 116.667% */
+  letter-spacing: 1.16em;
+  line-height: 1.17;
   display: inline-block;
   font-style: normal;
   letter-spacing: 0.54px;
