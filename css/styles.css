@@ -18,7 +18,7 @@ body {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700; /* Жирное начертание */
-  font-size: 24px; /* Размер шрифта */
+  font-size: 18px; /* Размер шрифта */
   line-height: 1.17; /* Межстрочное расстояние */
   letter-spacing: 0.03em; /* Отступы между буквами */
   text-transform: uppercase; /* Преобразование в верхний регистр */
@@ -94,6 +94,9 @@ body {
   color: #404bbf;
 }
 
+.hero-section {
+  text-align: center;
+}
 .hero-title {
   background: #2e2f42;
   color: #fff;
@@ -102,22 +105,27 @@ body {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin: 0;
+  text-align: center;
 }
 
 .hero-button {
+  color: #ffffff;
   background: #4d5ae5;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #fff;
-  /* Button Text */
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  gap: 10px;
+  cursor: pointer;
+  border: none;
 }
 
-.hero-button :hover {
+.hero-button :hover,
+.hero-focus {
   color: #ffffff;
   background-color: #404bbf;
 }
@@ -146,7 +154,6 @@ body {
 /* Текст описания */
 .advantage-text {
   color: #434455;
-  /* Body */
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -250,7 +257,7 @@ body {
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700; /* Жирное начертание */
-  font-size: 24px; /* Размер шрифта */
+  font-size: 18px; /* Размер шрифта */
   line-height: 1.17; /* Межстрочное расстояние */
   letter-spacing: 0.03em; /* Отступы между буквами */
   text-transform: uppercase; /* Преобразование в верхний регистр */
