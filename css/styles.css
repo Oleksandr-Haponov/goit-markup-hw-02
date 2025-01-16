@@ -153,7 +153,7 @@ body {
 
 /* Элементы списка */
 .advantages-item {
-  background-color: #f9f9f9; /* Лёгкий фон для элементов */
+  background-color: #ffffff; /* Белый фон для элементов */
   padding: 20px; /* Внутренние отступы */
   border-radius: 8px; /* Скругление углов */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
@@ -221,6 +221,7 @@ body {
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-transform: capitalize;
 }
 
 .team-item:hover {
