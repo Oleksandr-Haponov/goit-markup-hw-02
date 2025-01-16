@@ -132,27 +132,42 @@ body {
 }
 
 /* Секция с преимуществами */
-/* Секция с преимуществами */
 .advantages {
   padding: 40px 20px;
   background-color: #f9f9f9;
   text-align: center;
 }
 
+.visually-hidden {
+  position: absolute; /* Полностью убираем элемент с экрана */
+  width: 1px; /* Минимальная ширина */
+  height: 1px; /* Минимальная высота */
+  padding: 0; /* Убираем отступы */
+  margin: -1px; /* Скрываем за пределами видимой области */
+  overflow: hidden; /* Прячем содержимое */
+  clip: rect(0, 0, 0, 0); /* Обрезаем содержимое */
+  white-space: nowrap; /* Отключаем перенос текста */
+  border: 0; /* Убираем границы */
+}
+
 .advantages-list {
   list-style: none;
   padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 20px 0 0; /* Отступ между заголовком и списком */
+  display: flex;
   gap: 20px;
 }
 
 .advantages-item {
   background-color: #fff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Текст по левому краю */
+  transition: all 0.3s ease;
+}
+
+.advantages-item:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 
 .advantage-title {
