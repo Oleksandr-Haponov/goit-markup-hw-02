@@ -185,7 +185,6 @@ body {
   padding: 40px 20px;
   background-color: #f4f4f4;
   text-align: center;
-  width: 100%;
 }
 
 /* Заголовок секции */
@@ -195,7 +194,7 @@ body {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  text-align: center;
+  text-transform: capitalize; /* Каждое слово с заглавной буквы */
   margin-bottom: 40px;
 }
 
@@ -231,9 +230,8 @@ body {
 /* Фото участника */
 .team-photo {
   width: 264px;
-  height: auto;
+  height: 260px;
   margin-bottom: 15px;
-  border-radius: 50%; /* Скругление для круглых фото */
   object-fit: cover;
 }
 
