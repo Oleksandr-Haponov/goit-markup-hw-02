@@ -105,7 +105,7 @@ body {
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.07em;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   margin: 0;
   text-align: center;
@@ -119,8 +119,8 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.5em;
-  letter-spacing: 0.04em;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
   gap: 10px;
   cursor: pointer;
   border: none;
