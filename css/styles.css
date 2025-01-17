@@ -104,8 +104,8 @@ body {
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
-  line-height: 59.92px;
-  letter-spacing: 1.12px;
+  line-height: 1.07em;
+  letter-spacing: 0.02em;
   margin: 0;
   text-align: center;
 }
@@ -119,7 +119,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   gap: 10px;
   cursor: pointer;
   border: none;
