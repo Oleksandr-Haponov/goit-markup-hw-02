@@ -5,7 +5,7 @@ body {
   color: #434455;
 }
 
-/* Контейнер хедера */
+/* Контейнер Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -95,6 +95,7 @@ body {
   color: #404bbf;
 }
 
+/* Секция # 1 "Hero" */
 .hero-section {
   text-align: center;
 }
@@ -118,8 +119,8 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  line-height: 1.5em;
+  letter-spacing: 0.04em;
   gap: 10px;
   cursor: pointer;
   border: none;
@@ -131,7 +132,7 @@ body {
   background-color: #404bbf;
 }
 
-/* Секция с преимуществами */
+/* Секция # 2 "Advantages" */
 .advantages {
   padding: 40px 20px;
   background-color: #fff;
@@ -173,15 +174,18 @@ body {
   font-weight: 500;
   color: #2e2f42;
   margin-bottom: 8px;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
 }
 
 .advantage-text {
   font-size: 16px;
   color: #434455;
-  line-height: 1.5;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
 }
 
-/* Секция "Наша команда" */
+/* Секция # 3 "Наша команда" */
 .team-section {
   text-align: center;
   margin: 0 auto;
@@ -260,7 +264,7 @@ body {
   margin-bottom: 32px; /* Убираем лишние отступы */
 }
 
-/* Секция портфолио */
+/* Секция # 4 "Портфолио" */
 .portfolio {
   background-color: #fff;
   text-align: center;
@@ -331,6 +335,7 @@ body {
   margin: 0;
 }
 
+/* Контейнер Footer */
 .footer {
   background: #2e2f42;
 }
