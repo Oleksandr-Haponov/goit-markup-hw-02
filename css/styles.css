@@ -98,6 +98,7 @@ body {
 /* Секция # 1 "Hero" */
 .hero-section {
   text-align: center;
+  background: #2e2f42;
 }
 .hero-title {
   background: #2e2f42;
