@@ -136,6 +136,8 @@ body {
   padding: 40px 20px;
   background-color: #fff;
   text-align: center;
+  padding-left: 156px;
+  padding-right: 156px;
 }
 
 .visually-hidden {
@@ -151,28 +153,26 @@ body {
 }
 
 .advantages-list {
-  list-style: none;
-  padding left: 156px;
-  padding right: 156px;
-  margin: 20px 0 0; /* Отступ между заголовком и списком */
-  display: flex;
-  gap: 24px;
+  list-style: none; /* Убираем маркеры списка */
+  padding-left: 156px; /* Отступ слева */
+  padding-right: 156px; /* Отступ справа */
+  margin: 20px 0 0; /* Отступ сверху 20px, снизу и слева/справа — 0 */
+  display: flex; /* Расположение элементов в строку */
+  gap: 24px; /* Расстояние между элементами списка */
 }
 
-/* растояния мжду блоками выравнивание */
 .advantages-item {
   background-color: #fff;
   padding: 20px;
   text-align: left; /* Текст по левому краю */
   flex-basis: ((100% - 384px) / 4);
-
 }
 
 .advantage-title {
   font-size: 20px;
   font-weight: 500;
   color: #2e2f42;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .advantage-text {
@@ -183,9 +183,15 @@ body {
 
 /* Секция "Наша команда" */
 .team-section {
-  padding: 40px 20px;
-  background-color: #f4f4f4;
   text-align: center;
+  margin: 0 auto;
+  max-width: 1440px; /* Ограничиваем ширину */
+  padding: 0 20px; /* Боковые отступы для адаптации */
+  background-color: #f4f4fd; /* Фон секции */
+  width: 100%;
+  height: 732px;
+  padding-left: 156px;
+  padding-right: 156px;
 }
 
 /* Заголовок секции */
@@ -196,35 +202,32 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize; /* Каждое слово с заглавной буквы */
-  margin-bottom: 40px;
+  margin-bottom: 120px; /* Отступ снизу */
 }
 
 /* Список участников */
 .team-list {
   list-style: none; /* Убираем маркеры списка */
-  padding: 0;
-  margin: 0 auto;
-  display: grid; /* Используем грид для размещения */
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(264px, 1fr)
-  ); /* Адаптивные колонки */
-  gap: 20px; /* Расстояние между карточками */
-  max-width: 1200px;
+  padding: 0; /* Убираем внутренние отступы */
+  margin: 0 auto; /* Центровка списка */
+  display: flex;
+  gap: 24px; /* Расстояние между карточками */
 }
 
 /* Карточка участника */
 .team-item {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Тень карточки */
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff; /* Белый фон */
+  border-radius: 0px 0px 4px 4px; /* Скругленные углы */
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); /* Тень карточки */
+  text-align: center; /* Центровка текста */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+  width: 264px;
+  height: auto;
 }
 
 .team-item:hover {
-  transform: translateY(-5px); /* Лёгкое поднятие карточки */
+  transform: translateY(-5px); /* Поднятие карточки при наведении */
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Усиленная тень */
 }
 
@@ -232,8 +235,9 @@ body {
 .team-photo {
   width: 264px;
   height: 260px;
-  margin-bottom: 15px;
-  object-fit: cover;
+  max-width: 264px; /* Ограничение ширины фото */
+  margin-bottom: 32px; /* Центровка и отступ снизу */
+  object-fit: cover; /* Сохраняем пропорции изображения */
 }
 
 /* Имя участника */
@@ -243,7 +247,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
+  margin-bottom: 8px; /* Отступ снизу */
 }
 
 /* Роль участника */
@@ -253,18 +257,17 @@ body {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin: 0;
+  margin-bottom: 32px; /* Убираем лишние отступы */
 }
 
 /* Секция портфолио */
-.portfolio-section {
-  padding: 40px 20px;
-  background-color: #f4f4f4;
+.portfolio {
+  background-color: #fff;
   text-align: center;
 }
 
 /* Заголовок секции */
-.section-title {
+.portfolio-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -276,7 +279,7 @@ body {
 }
 
 /* Список карточек */
-.card-list {
+.portfolio-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -286,7 +289,7 @@ body {
 }
 
 /* Карточка */
-.card-item {
+.portfolio-item {
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -295,13 +298,13 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-item:hover {
+.portfolio-item:hover {
   transform: translateY(-5px);
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Фото карточки */
-.card-photo {
+.portfolio-photo {
   width: 360px;
   height: auto;
   margin-bottom: 20px;
@@ -309,7 +312,7 @@ body {
 }
 
 /* Название продукта */
-.card-name {
+.portfolio-name {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -319,7 +322,7 @@ body {
 }
 
 /* Описание продукта */
-.card-description {
+.portfolio-description {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -328,18 +331,8 @@ body {
   margin: 0;
 }
 
-.site-footer {
+.footer {
   background: #2e2f42;
-}
-
-.footer-description {
-  color: #f4f4fd;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  width: 100%;
 }
 
 .footer-logo {
@@ -356,4 +349,14 @@ body {
 /* Вторая часть логотипа */
 .footer-secondary {
   color: #f4f4fd; /* Цвет второй части логотипа */
+}
+
+.footer-description {
+  color: #f4f4fd;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: 100%;
 }
