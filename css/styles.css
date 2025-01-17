@@ -127,8 +127,8 @@ body {
   border: none;
 }
 
-.hero-button :hover,
-.hero-focus {
+.hero-button:hover,
+.hero-button:focus {
   color: #ffffff;
   background-color: #404bbf;
 }
