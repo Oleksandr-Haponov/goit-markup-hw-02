@@ -85,6 +85,7 @@ body {
 /* Секция # 1 "Hero" */
 .hero-section {
   background: #2e2f42;
+  text-align: center;
 }
 .hero-title {
   background: #2e2f42;
@@ -115,6 +116,7 @@ body {
 /* Секция # 2 "Advantages" */
 .advantages {
   background-color: #fff;
+  text-align: center;
 }
 
 .visually-hidden {
@@ -147,6 +149,7 @@ body {
 /* Секция # 3 "Наша команда" */
 .team-section {
   background-color: #f4f4fd;
+  text-align: center;
 }
 
 /* Заголовок секции */
@@ -194,6 +197,7 @@ body {
 /* Секция # 4 "Портфолио" */
 .portfolio {
   background-color: #fff;
+  text-align: center;
 }
 
 /* Заголовок секции */
