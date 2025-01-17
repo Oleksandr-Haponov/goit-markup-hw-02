@@ -7,11 +7,8 @@ body {
 
 /* Контейнер Header */
 .header {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
   background: #fff; /* Цвет фона */
-  height: 72px; /* Высота хедера */
 }
 
 /* Общие стили для логотипа */
@@ -33,7 +30,6 @@ body {
 
 /* Список меню */
 .menu-list {
-  display: flex;
   margin: 0;
   list-style: none;
 }
@@ -67,7 +63,6 @@ body {
 /* Список контактов */
 .contact-list {
   list-style: none;
-  display: flex;
   margin: 0;
 }
 
@@ -131,9 +126,6 @@ body {
 }
 
 .visually-hidden {
-  width: 1px; /* Минимальная ширина */
-  height: 1px; /* Минимальная высота */
-  padding: 0; /* Убираем отступы */
   margin: -1px; /* Скрываем за пределами видимой области */
   overflow: hidden; /* Прячем содержимое */
   clip: rect(0, 0, 0, 0); /* Обрезаем содержимое */
@@ -142,14 +134,12 @@ body {
 }
 
 .advantages-list {
-  display: flex;
-  list-style: none;
+  list-style: none; /* Убираем маркеры списка */
   margin: 20px 0 0;
 }
 
 .advantages-item {
   background-color: #fff;
-  flex-basis: ((100% - 384px) / 4);
 }
 
 .advantage-title {
@@ -171,7 +161,6 @@ body {
 /* Секция # 3 "Наша команда" */
 .team-section {
   text-align: center;
-  max-width: 1440px;
   margin: 0 auto;
   background-color: #f4f4fd;
 }
@@ -192,27 +181,16 @@ body {
   list-style: none; /* Убираем маркеры списка */
   padding: 0; /* Убираем внутренние отступы */
   margin: 0 auto; /* Центровка списка */
-  display: flex;
 }
 
 /* Карточка участника */
 .team-item {
   background-color: #ffffff; /* Белый фон */
   text-align: center; /* Центровка текста */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
-  width: 264px;
-  height: auto;
-}
-
-.team-item:hover {
-  transform: translateY(-5px); /* Поднятие карточки при наведении */
 }
 
 /* Фото участника */
 .team-photo {
-  width: 264px;
-  height: 260px;
-  max-width: 264px; /* Ограничение ширины фото */
   margin-bottom: 32px; /* Центровка и отступ снизу */
   object-fit: cover; /* Сохраняем пропорции изображения */
 }
@@ -259,28 +237,17 @@ body {
 .portfolio-list {
   list-style: none;
   margin: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 }
 
 /* Карточка */
 .portfolio-item {
   background-color: #ffffff;
-  border-radius: 8px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.portfolio-item:hover {
-  transform: translateY(-5px);
 }
 
 /* Фото карточки */
 .portfolio-photo {
-  width: 360px;
-  height: auto;
   margin-bottom: 20px;
-  border-radius: 8px;
 }
 
 /* Название продукта */
@@ -331,5 +298,4 @@ body {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 100%;
 }
